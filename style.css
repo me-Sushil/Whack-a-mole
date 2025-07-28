@@ -11,6 +11,7 @@ body {
   color: #333;
 }
 
+
 .scoreboard {
   display: flex;
   justify-content: space-between;
@@ -35,6 +36,29 @@ h1#miss {
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
+}
+
+.startGame {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #ffca28;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.startGame:hover {
+  background-color: #ffa000;
+}
+
+.game-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
 }
 
 #whack-a-mole {
