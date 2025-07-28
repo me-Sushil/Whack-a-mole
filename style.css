@@ -11,9 +11,20 @@ body {
   color: #333;
 }
 
-h1#score {
-  font-size: 5rem;
-  margin-bottom: 25px;
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+h1#score,
+h1#miss {
+  font-size: 3rem;
+  margin: 0;
+  gap: 1px;
   background: linear-gradient(90deg, #ff4081, #ffca28);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
