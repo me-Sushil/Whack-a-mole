@@ -11,6 +11,28 @@ body {
   color: #333;
 }
 
+.game-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.startGame {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #ffca28;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.startGame:hover {
+  background-color: #ffa000;
+}
 
 .scoreboard {
   display: flex;
@@ -21,16 +43,14 @@ body {
   margin-bottom: 20px;
 }
 
-h1#score,
-h1#miss {
-  font-size: 3rem;
+h5#score,
+h5#miss {
+  font-size: 27px;
   margin: 0;
-  gap: 1px;
-  background: linear-gradient(90deg, #ff4081, #ffca28);
+  background: linear-gradient(90deg, #ff4081, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: bounce 1s infinite;
-  text-shadow: 2px 2px #fff176;
+  text-shadow: 2px 2px #000000;
 }
 
 @keyframes bounce {
