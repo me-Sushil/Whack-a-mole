@@ -11,7 +11,6 @@ const btn = document.getElementById("start");
 const highScore = document.querySelector(".highScore");
 const timeup = document.querySelector(".highScor");
 
-
 window.addEventListener("DOMContentLoaded", () => {
   const savedHighScore = JSON.parse(localStorage.getItem("highScore")) || 0;
   highScore.innerText = `High Score : ${savedHighScore}`;
@@ -33,10 +32,7 @@ function startGame() {
     }, 17000);
   }, 750);
 
-  // Add event listener
   whackamole.addEventListener("click", handleClick);
-
-  //game time 2 minute
 
   gameTimeout = setTimeout(() => {
     endGame();
