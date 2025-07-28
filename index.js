@@ -29,14 +29,14 @@ function startGame() {
 
     setTimeout(() => {
       holes[randomNum].classList.remove("mole");
-    }, 17000);
+    }, 7000);
   }, 750);
 
   whackamole.addEventListener("click", handleClick);
 
   gameTimeout = setTimeout(() => {
     endGame();
-  }, 30000);
+  }, 10000);
 }
 
 function handleClick(event) {
