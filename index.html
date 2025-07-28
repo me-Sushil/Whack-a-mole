@@ -7,11 +7,12 @@
     <script defer src="./index.js" defer></script>
   </head>
   <body>
-    <div class="scoreboard">
-      <h1 id="score">Score : 0</h1>
-      <h1 id="miss">Miss : 0</h1>
-    </div>
+    <div class="game-container">
       <div id="whack-a-mole">
+        <div class="scoreboard">
+          <h5 id="score">Score : 0</h5>
+          <h5 id="miss">Miss : 0</h5>
+        </div>
         <div class="hole"></div>
         <div class="hole"></div>
         <div class="hole"></div>
@@ -22,5 +23,11 @@
         <div class="hole"></div>
         <div class="hole"></div>
       </div>
+      <div class="side-panel">
+        <h2 class="highScor"></h2>
+        <h2 class="highScore">High Score : 0</h2>
+        <button class="startGame" id="start">Start</button>
+      </div>
+    </div>
   </body>
 </html>
