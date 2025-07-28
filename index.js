@@ -28,9 +28,15 @@ function startGame() {
     holes[randomNum].classList.toggle("mole");
 
     setTimeout(() => {
-      holes[randomNum].classList.remove("mole");
+      holes.classList.remove("mole");
     }, 7000);
   }, 750);
+
+  setTimeout(() => {
+    clearInterval(gameInterval);
+
+    holes.forEach((hole) => hole.classList.remove("mole"));
+  }, 10000);
 
   whackamole.addEventListener("click", handleClick);
 
